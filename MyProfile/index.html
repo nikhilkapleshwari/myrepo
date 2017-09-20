@@ -70,14 +70,15 @@
 
     <header>
         <div class="header-content">
-            <div class="header-content-inner">
+            <div id="myHeading" class="header-content-inner" hidden>
+
                 <h1 id="homeHeading">Nikhil Kapleshwari</h1>
                 <hr>
                 <p id="designation">Software Developer</p>
  
 <!--                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
  -->                    
-            <ul class="list-inline social-buttons">
+            <ul id="mySocialButtons" class="list-inline social-buttons" hidden>
                             <li><a href="https://twitter.com/nikhil9927785" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                             <li><a href="https://www.facebook.com/nikhil.kapleshwari" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -97,7 +98,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Hello Everyone!</h2>
+                    <h2 class="section-heading">Hello!</h2>
                     <hr class="light">
                     <p class="text-faded">My name is Nikhil Kapleshwari!I have completed BE in Information Technology from Datta Meghe college of Engineering(Mumbai University), and currently i am working for BNP Paribas India Solutions as a java developer. The things i am passionate about are programming,adventures,playing and watching sports like cricket and football.</p>
                     <p class="text-faded">Experience: 3 years 8 months</p>
@@ -245,6 +246,16 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
 
+
+<script>
+$(document).ready(function(){
+
+        $("#myHeading").fadeIn(200,function(){
+            $(this).animate({ 'zoom': 1.15 }, 800);
+        });
+         $("#mySocialButtons").fadeIn(3000); 
+});
+</script>
 </body>
 
 </html>
